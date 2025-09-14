@@ -79,22 +79,13 @@
       color: #fff;
       text-decoration: none;
       transition: all 0.2s ease;
+      background: #ddd;
     }
 
-    .icons img {
-      height: 28px;
-      width: 28px;
-      border-radius: 50%;
-      object-fit: contain;
-      background: #fff;
-      padding: 4px;
-    }
-
-    /* Couleurs SVG */
+    /* Couleurs réseaux */
     .linkedin { background: #0A66C2; }
     .facebook { background: #1877F2; }
     .instagram { background: #E4405F; }
-    .imdb { background: #F5C518; }
     .mail { background: #D44638; }
 
     .icons svg {
@@ -102,7 +93,42 @@
       height: 22px;
       fill: white;
     }
-    .imdb svg { fill: black; }
+
+    .icons img {
+      border-radius: 6px;
+      background: white;
+    }
+
+    .films {
+      background: #fff;
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      max-width: 700px;
+      margin-top: 40px;
+    }
+
+    .films h2 {
+      color: #136f9c;
+      margin-top: 0;
+    }
+
+    .film-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .film-item img {
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #999;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -131,15 +157,15 @@
         </a>
         <!-- LBDLB -->
         <a href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank">
-          <img src="logolbdlb.png" alt="La Boîte dans la Boîte" />
+          <img src="logolbdlb.png" alt="La Boîte dans la Boîte" style="height:32px;" />
         </a>
         <!-- FilmDoc -->
         <a href="https://www.film-documentaire.fr/4DACTION/w_fiche_createur/75077" target="_blank">
-          <img src="logofilmdocu.jpg" alt="Film-documentaire.fr" />
+          <img src="logofilmdocu.jpg" alt="Film-documentaire.fr" style="height:32px;" />
         </a>
         <!-- IMDb -->
-        <a href="https://www.imdb.com/fr/user/ur166041620/?ref_=nmmi_nv_profile" target="_blank" class="imdb">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M8 8h48v48H8z"/></svg>
+        <a href="https://www.imdb.com/fr/user/ur166041620/?ref_=nmmi_nv_profile" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDb" style="height:28px; border-radius:4px; background:#F5C518; padding:4px;" />
         </a>
         <!-- Mail -->
         <a href="mailto:ludovic@laboitedanslaboite.com" class="mail">
@@ -163,6 +189,7 @@
     </div>
   </main>
 
+  <!-- Films -->
   <section class="films">
     <h2>Films & Sélections</h2>
     <div class="film-item">
@@ -176,8 +203,7 @@
   </section>
 
   <footer>
-    © <span id="y"></span> Ludovic Lang • ludoviclang.fr
+    © 2025 Ludovic Lang — <a href="https://ludoviclang.fr">ludoviclang.fr</a>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
