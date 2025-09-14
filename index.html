@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="6hES5QlwaSRIs64crWFjVOhx_39EjUfaQ2-owrh6TvQ" />
   <title>Ludovic Lang – Réalisateur & Producteur Associé</title>
-  <meta name="description" content="Page officielle de Ludovic Lang : réalisateur & producteur associé. Films, sélections en festival, réseaux et contact.">
+  <meta name="description" content="Page officielle de Ludovic Lang, réalisateur & producteur associé. Découvrez ses films, sélections en festivals, réseaux et contact.">
   <link rel="canonical" href="https://ludoviclang.fr/">
+
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="6hES5QlwaSRIs64crWFjVOhx_39EjUfaQ2-owrh6TvQ" />
+
   <style>
     body {
       margin: 0;
@@ -15,60 +18,60 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 40px 20px;
     }
 
-    .card {
-      text-align: center;
+    .card, .films {
       background: #fff;
       border-radius: 22px;
       padding: 40px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      max-width: 700px;
+      max-width: 700px;  /* largeur cohérente */
       width: 100%;
       margin-bottom: 40px;
     }
 
-    .profile-pic {
-      width: 140px;
-      height: 140px;
+    .avatar {
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 20px;
     }
 
     h1 {
-      margin: 10px 0;
-      font-size: 26px;
-      font-weight: bold;
+      margin: 0;
+      font-size: 2rem;
     }
 
-    h2 {
-      font-size: 18px;
-      font-weight: normal;
+    .role {
+      margin: 8px 0 16px;
       color: #555;
-      margin: 5px 0 20px;
+      font-size: 1.1rem;
     }
 
     .bio {
-      font-size: 15px;
-      color: #444;
+      color: #333;
       line-height: 1.5;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #0f5fa6;
+      margin-bottom: 24px;
     }
 
     h3 {
-      font-size: 18px;
-      margin: 20px 0 15px;
-      font-weight: bold;
+      margin-bottom: 15px;
     }
 
     .social-icons {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 15px;
-      margin-bottom: 20px;
+      gap: 16px;
+      margin-bottom: 24px;
     }
 
     .social-icons img {
@@ -83,113 +86,88 @@
       transform: scale(1.1);
     }
 
-    .films {
-      background: #fff;
-      border-radius: 22px;
-      padding: 30px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      max-width: 900px;
-      width: 100%;
-      margin-bottom: 40px;
-    }
-
-    .films h2 {
-      text-align: center;
-      font-size: 24px;
-      color: #0077b6;
-      margin-bottom: 30px;
-    }
-
+    /* Section films */
     .film {
       display: flex;
       align-items: center;
-      background: #fff;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      margin-bottom: 20px;
+      text-align: left;
     }
 
     .film img {
       width: 180px;
-      height: auto;
       border-radius: 12px;
       margin-right: 20px;
+      flex-shrink: 0;
     }
 
-    .film-info {
-      max-width: 600px;
-      text-align: left;
-    }
-
-    .film-info h3 {
+    .film-info h4 {
       margin: 0 0 10px;
-      font-size: 20px;
+      font-size: 1.2rem;
     }
 
     .film-info p {
       margin: 0 0 10px;
-      font-size: 15px;
       color: #333;
     }
 
     .film-info a {
-      color: #0077b6;
+      color: #0f5fa6;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
 
     .film-info a:hover {
       text-decoration: underline;
     }
 
-    footer {
-      font-size: 13px;
-      color: #777;
-      margin-top: 30px;
-      text-align: center;
+    @media (max-width: 700px) {
+      .film {
+        flex-direction: column;
+        text-align: center;
+      }
+      .film img {
+        margin: 0 0 20px 0;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- Carte profil -->
   <div class="card">
-    <img src="photo.jpg" alt="Ludovic Lang" class="profile-pic">
+    <img src="photo.jpg" alt="Portrait de Ludovic Lang" class="avatar">
     <h1>Ludovic Lang</h1>
-    <h2>Réalisateur & Producteur Associé</h2>
+    <p class="role">Réalisateur & Producteur Associé</p>
     <p class="bio">J’explore des récits qui ouvrent le regard et questionnent notre époque. Retrouvez mes films, projets et réseaux.</p>
 
     <h3>Réseaux professionnels</h3>
     <div class="social-icons">
-      <a href="https://linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-      <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-      <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-      <a href="https://laboitedanslaboite.com" target="_blank"><img src="logolbdlb.png" alt="La Boite Dans La Boite"></a>
-      <a href="https://film-documentaire.fr" target="_blank"><img src="logofilmdocu.jpg" alt="Film documentaire"></a>
-      <a href="https://imdb.com" target="_blank"><img src="imdb.png" alt="IMDb"></a>
-      <a href="mailto:contact@ludoviclang.fr"><img src="gmail.png" alt="Email"></a>
+      <a href="https://www.linkedin.com/in/lang-ludovic-06a10159/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="https://www.facebook.com/ludovic.lang/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/laboitedanslaboite/" target="_blank"><img src="instagram.png" alt="Instagram Pro"></a>
+      <a href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank"><img src="logolbdlb.png" alt="La Boîte dans la Boîte"></a>
+      <a href="https://www.film-documentaire.fr/4DACTION/w_fiche_createur/75077" target="_blank"><img src="logofilmdocu.jpg" alt="Film Documentaire"></a>
+      <a href="https://www.imdb.com/fr/user/ur166041620/?ref_=nmmi_nv_profile" target="_blank"><img src="imdb.png" alt="IMDb"></a>
+      <a href="mailto:ludovic@laboitedanslaboite.com"><img src="gmail.png" alt="Email"></a>
     </div>
 
     <h3>Réseaux personnels</h3>
     <div class="social-icons">
-      <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook perso"></a>
-      <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram perso"></a>
+      <a href="https://www.facebook.com/ludovic.lang/" target="_blank"><img src="facebook.png" alt="Facebook Perso"></a>
+      <a href="https://www.instagram.com/ludovic_lang_/" target="_blank"><img src="instagram.png" alt="Instagram Perso"></a>
     </div>
   </div>
 
+  <!-- Carte films -->
   <div class="films">
     <h2>Films & Sélections</h2>
     <div class="film">
-      <img src="affichelesanges.jpg" alt="Les Anges se penchent parfois">
+      <img src="affichelesanges.jpg" alt="Affiche du film Les Anges se penchent parfois">
       <div class="film-info">
-        <h3>Les Anges se penchent parfois</h3>
+        <h4>Les Anges se penchent parfois</h4>
         <p>Film réalisé par Ludovic Lang, sélectionné au <strong>Festival International du Film sur l’Art (FIFA)</strong>.</p>
         <a href="https://lefifa.com/catalogue/les-anges-se-penchent-parfois-2" target="_blank">→ Voir la fiche sur le site du festival</a>
       </div>
     </div>
   </div>
-
-  <footer>
-    © 2025 Ludovic Lang · ludoviclang.fr
-  </footer>
 </body>
 </html>
