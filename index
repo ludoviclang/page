@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Vérification Google Search Console -->
+  <meta name="google-site-verification" content="6hES5QlwaSRIs64crWFjVOhx_39EjUfaQ2-owrh6TvQ" />
+
+  <title>Ludovic Lang — Réalisateur & Producteur Associé</title>
+  <meta name="description" content="Page officielle de Ludovic Lang : réalisateur & producteur associé. Films, sélections en festival, réseaux et contact." />
+  <link rel="canonical" href="https://ludoviclang.fr/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Ludovic Lang — Réalisateur & Producteur Associé" />
+  <meta property="og:description" content="Site officiel de Ludovic Lang : réalisateur & producteur associé. Films, festivals, réseaux et contact." />
+  <meta property="og:url" content="https://ludoviclang.fr/" />
+  <meta property="og:image" content="https://ludoviclang.fr/photo.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ludovic Lang — Réalisateur & Producteur Associé" />
+  <meta name="twitter:description" content="Site officiel de Ludovic Lang : réalisateur & producteur associé. Films, festivals, réseaux et contact." />
+  <meta name="twitter:image" content="https://ludoviclang.fr/photo.jpg" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8693ee6e15.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #f6f7fb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      text-align: center;
+      background: #fff;
+      border-radius: 22px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      max-width: 460px;
+      margin-top: 40px;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+    }
+    .role {
+      color: #666;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .bio {
+      color:#374151;
+      line-height:1.5;
+      font-size: 0.95rem;
+      max-width: 60ch;
+      margin: 0 auto 22px auto;
+    }
+
+    .networks {
+      margin-top: 20px;
+    }
+    .networks h3 {
+      margin: 15px 0 10px 0;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #444;
+      text-align: center;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .icons a {
+      font-size: 1.5rem;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s ease;
+      color: #fff;
+    }
+
+    /* styles par plateforme */
+    .icons a.linkedin { background: #0A66C2; }
+    .icons a.facebook { background: #1877F2; }
+    .icons a.instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+    .icons a.web,
+    .icons a.filmdoc {
+      background: #fff;
+      border: 2px solid #333;
+      overflow: hidden;
+      padding: 0;
+    }
+    .icons a.web img,
+    .icons a.filmdoc img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .icons a.mail { background: #EA4335; }
+    .icons a.imdb { background: #F5C518; color: #000; }
+
+    /* perso plus petit */
+    .icons.perso a {
+      width: 38px;
+      height: 38px;
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    /* Section films */
+    .films {
+      margin-top: 50px;
+      padding: 30px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .films h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.6rem;
+      color: #136f9c;
+    }
+
+    .film {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .film img {
+      width: 140px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .film h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .film p {
+      margin: 6px 0;
+      line-height: 1.4;
+    }
+
+    footer {
+      margin: 40px 0 20px 0;
+      font-size: 0.85rem;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @media(max-width:600px) {
+      .film { flex-direction: column; align-items: center; text-align: center; }
+      .film img { width: 100%; max-width: 300px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="avatar" src="photo.jpg" alt="Portrait de Ludovic Lang" />
+    <h1>Ludovic Lang</h1>
+    <p class="role">Réalisateur & Producteur Associé</p>
+
+    <p class="bio">
+      J’explore des récits qui ouvrent le regard et questionnent notre époque.
+      Retrouvez mes films, projets et réseaux.
+    </p>
+
+    <div class="networks">
+      <h3>Réseaux professionnels</h3>
+      <div class="icons">
+        <a class="linkedin" href="https://www.linkedin.com/in/lang-ludovic-06a10159/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="facebook" href="https://www.facebook.com/laboitedanslaboite/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="instagram" href="https://www.instagram.com/laboitedanslaboite/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="web" href="https://www.laboitedanslaboite.com/notrehistoire" target="_blank">
+          <img src="logolbdlb.png" alt="Logo La Boîte Dans La Boîte" />
+        </a>
+        <a class="filmdoc" href="https://www.film-documentaire.fr/4DACTION/w_fiche_createur/75077" target="_blank">
+          <img src="logofilmdocu.jpg" alt="Film-documentaire.fr" />
+        </a>
+        <a class="imdb" href="https://www.imdb.com/fr/user/ur166041620/?ref_=nmmi_nv_profile" target="_blank"><i class="fab fa-imdb"></i></a>
+        <a class="mail" href="mailto:ludovic@laboitedanslaboite.com"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      <h3>Réseaux personnels</h3>
+      <div class="icons perso">
+        <a class="facebook" href="https://www.facebook.com/ludovic.lang/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="instagram" href="https://www.instagram.com/ludovic_lang_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Films -->
+  <section class="films">
+    <h2>Films & Sélections</h2>
+
+    <article class="film">
+      <img src="affichelesanges.jpg" alt="Affiche du film Les Anges se penchent parfois" />
+      <div>
+        <h3>Les Anges se penchent parfois</h3>
+        <p>Film réalisé par Ludovic Lang, sélectionné au <strong>Festival International du Film sur l’Art (FIFA)</strong>.</p>
+        <p><a href="https://lefifa.com/catalogue/les-anges-se-penchent-parfois-2" target="_blank">→ Voir la fiche sur le site du festival</a></p>
+      </div>
+    </article>
+
+  </section>
+
+  <footer>© <span id="y"></span> Ludovic Lang • ludoviclang.fr</footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- SEO JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ludovic Lang",
+    "jobTitle": "Réalisateur & Producteur Associé",
+    "image": "https://ludoviclang.fr/photo.jpg",
+    "url": "https://ludoviclang.fr/",
+    "works": [
+      {
+        "@type": "Movie",
+        "name": "Les Anges se penchent parfois",
+        "url": "https://lefifa.com/catalogue/les-anges-se-penchent-parfois-2",
+        "description": "Film réalisé par Ludovic Lang, sélectionné au Festival International du Film sur l’Art (FIFA).",
+        "genre": "Court-métrage documentaire"
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/lang-ludovic-06a10159/",
+      "https://www.facebook.com/laboitedanslaboite/",
+      "https://www.instagram.com/laboitedanslaboite/",
+      "https://www.facebook.com/ludovic.lang/",
+      "https://www.instagram.com/ludovic_lang_/",
+      "https://www.laboitedanslaboite.com/",
+      "https://www.film-documentaire.fr/4DACTION/w_fiche_createur/75077",
+      "https://www.imdb.com/fr/user/ur166041620/?ref_=nmmi_nv_profile"
+    ]
+  }
+  </script>
+</body>
+</html>
